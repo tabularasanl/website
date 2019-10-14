@@ -1,42 +1,756 @@
 <!doctype html>
 <html lang="nl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Tabula Rasa</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0398fc">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navigation">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Introductie</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="manifest" data-toggle="dropdown">Dropdown</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Tabula Rasa</title>
+  <style>
+    body>.container {
+      padding: 60px 15px 0;
+    }
+
+    body {
+      line-height: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: royalblue">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.svg" width="30" height="30" alt="Logo" />
+        Tabula Rasa
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#introductie">Introductie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#speerpunten">Speerpunten</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="manifest-menu" data-toggle="dropdown">Manifest</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#manifest-samenvatting">Samenvatting: Fundamentele waarden</a>
+              <a class="dropdown-item" href="#manifest-anders">De verbindende kracht van anders zijn</a>
+              <a class="dropdown-item" href="#manifest-rechtsstaat">De rechtsstaat en de spreiding</a>
+              <a class="dropdown-item" href="#manifest-democratie">Democratie en de wil van het volk</a>
+              <a class="dropdown-item" href="#manifest-rechtvaardig">Rechtvaardigheid</a>
+              <a class="dropdown-item" href="#manifest-belang">Het algemeen belang</a>
+              <a class="dropdown-item" href="#manifest-huwelijk">Het huwelijk</a>
+              <a class="dropdown-item" href="#manifest-mens">De menselijke natuur en het streven naar een hogere
+                ethische samenleving</a>
+              <a class="dropdown-item" href="#manifest-manvrouw">Man-vrouw verhouding</a>
+              <a class="dropdown-item" href="#manifest-geslacht">Geslacht en seksuele oriëntatie</a>
+              <a class="dropdown-item" href="#manifest-technologie">De opkomst van technologie</a>
+              <a class="dropdown-item" href="#manifest-toekomst">Een waardige toekomst</a>
+              <a class="dropdown-item" href="#manifest-uitleiding">Uitleiding</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <main role="main" class="container">
+    <div id="introductie" class="my-5">
+      <h1>Introductie</h1>
+      <p>De politiek is tegenwoordig een spel waarin persoonlijke belangen en partijbelangen de overhand nemen. De waan
+        van de dag zorgt voor kortetermijnbeleid, terwijl er te weinig oplossingen worden gevonden voor echte problemen.
+      </p>
+      <p>Het algemeen belang moet voorop komen te staan en daarom is Tabula Rasa van start gegaan. Wij willen onder
+        andere weer een studiefinanciering, kortere werkweken met eerlijkere salarissen en actie ondernemen om de
+        klimaatproblematiek echt aan te pakken.</p>
+      <p>In plaats van politiek bedrijven op de persoon willen wij op zoek naar pragmatische en constructieve
+        oplossingen. Oplossingen voor langer dan alleen de vier jaren, (de termijn waar de rest van de politiek zich op
+        richt). In plaats van discussies over links en rechts en benadrukken waarom anderen verkeerd bezig zijn, bieden
+        wij onze alternatieve oplossingen aan. Want de politiek kan anders, het moet anders en Tabula Rasa biedt het
+        alternatief.</p>
+    </div>
+
+    <div id="speerpunten" class="my-5">
+      <h1>Speerpunten</h1>
+      <ul>
+        <li>Er komt een versterkt armoedebestrijdingsprogramma, met name gericht op de strijd tegen kinderarmoede.</li>
+        <li>We worden geen belastingparadijs meer! Ieder bedrijf, groot of klein, gaat een eerlijk deel aan belasting
+          betalen doordat we belastingontduiking en belastingontwijking hard gaan aanpakken. </li>
+        <li>Er komt een nieuwe maatstaf in plaats van het bruto binnenlands product. Een nieuwe maatstaf waarbij niet
+          alleen de geldwaarde van een land, maar ook waarden als geluk, gezondheid en de kwaliteit van de leefomgeving
+          mee worden genomen. </li>
+        <li>Zowel de overheid als banken maken openbaar waar geld in wordt geïnvesteerd, om mensen te laten zien hoeveel
+          Nederlands geld gaat naar:</li>
+        <ul>
+          <li>Ondernemingen die medeverantwoordelijk zijn voor klimaatschade;</li>
+          <li>Ondernemingen die betrokken zijn bij misstanden op het gebied van dierenwelzijn;</li>
+          <li>Wapenhandel of andere ondernemingen die handelen in strijd met mensenrechten.</li>
+        </ul>
+        <li>Niet multinationals, maar het midden- en kleinbedrijf wordt de draaiende motor van onze economie. Het mkb
+          (inclusief zzp’ers) wordt beter bijgestaan en gestimuleerd om dromen realiteit te maken.</li>
+        <li>Het zorgstelsel gaat op de schop: de zorg wordt voor iedereen gratis, zónder eigen risico!</li>
+        <li>Er komt een basisinkomen in plaats van een uitkeringsstelsel. Zo moet een volwaardig leven mogelijk worden
+          voor iedereen.</li>
+        <li>Een eenduidige pensioenleeftijd verdwijnt onder het basisinkomen. Tot wanneer iemand moet werken hangt af
+          van iemands leeftijd, het aantal gewerkte jaren en de zwaarte van het beroep.</li>
+        <li>Het leenstelsel wordt afgeschaft: studeren wordt weer gratis!</li>
+        <li>Een fulltime werkweek wordt maximaal 30 uur.</li>
+        <li>Het minimumloon wordt verhoogd. Iedereen moet door middel van minimumloon in basisbehoeften kunnen voorzien.
+        </li>
+        <li>Het jeugdloon wordt volledig afgeschaft. Loon moet weer worden bepaald aan de hand van de werkzaamheden die
+          iemand levert.</li>
+        <li>Verkiezingsdagen worden op zondag gehouden. Zo moet de opkomst bij verkiezingen groter worden en de afstand
+          tussen de politiek en het volk kleiner.</li>
+        <li>De Eerste Kamer wordt afgeschaft. Een politiek orgaan dat gevoelig is voor belangenverstrengelingen past
+          niet binnen een goed functionerende democratie.</li>
+        <li>De overheid moet transparanter! Alle stukken van het kabinet of van onderhandelaars bij de formatie van een
+          kabinet kunnen worden ingezien door álle leden van de StatenGeneraal.</li>
+        <li>Een alternatieve Europese samenwerking is nodig in plaats van de EU. Een nieuwe internationale samenwerking
+          moet op poten worden gezet, waarbij meer recht wordt gedaan aan democratie, menselijke waardigheid,
+          landsbelangen en een eerlijke internationale handel.</li>
+        <li>Kernenergie moet klimaatproblematiek op gaan lossen. Politieke overleggen en papieren akkoorden lossen te
+          weinig op. Actie is nu nodig en kernenergie is op dit moment de enige energiezuinige oplossing.</li>
+        <li>Dierenleed en duurzaamheidsproblematiek moet worden bestreden, door de bioindustrie te richten op Nederland
+          in plaats van buitenlandse export.</li>
+        <li>De inburgering voor nieuwkomers wordt vernieuwd en verbeterd. Geprivatiseerde inburgeringscursussen worden
+          afgeschaft en worden weer vanuit de overheid georganiseerd.</li>
+      </ul>
+    </div>
+
+    <div id="manifest" class="my-5">
+      <div id="manifest-samenvatting">
+        <h1>Manifest 'Fundamentele waarden'</h1>
+        <blockquote class="blockquote text-center my-3 bg-light">
+          <p class="mb-0"><em>"Te midden van chaos creëert de waarheid hoop."</em></p>
+        </blockquote>
+        <p>De woorden in dit stuk vormen samen een geheel van waarden die een alternatief ideaalbeeld voor een
+          samenleving schetsen. Verbondenheid, menselijke waardigheid, solidariteit, democratie, gelijkwaardigheid en
+          rechtvaardigheid zijn de fundamentele waarden uit dit ideaalbeeld en vormen de rode draad in dit manifest. De
+          ideologie uit dit manifest is voortgekomen uit veel gedachtewisselingen, eigen ervaringen en bestaande
+          theorieën. We hopen hiermee u als lezer zelf aan het denken te zetten, wetende dat iets wat kort uitgedrukt is
+          de vrucht kan zijn van veel en langdurig nadenken.</p>
+        <p>De reden voor het schrijven van een manifest is tweeledig. Enerzijds willen wij hiermee een ruwe schets
+          bieden voor een alternatieve samenleving zoals wij die voor ons zien. Anderzijds willen wij een leidraad
+          presenteren die zowel praktisch toepasbaar is als een ideaalbeeld geeft die tijd, cultuur en samenleving
+          overstijgt. Wij hebben ervoor gekozen geen referenties op te nemen in dit document. Het is expliciet niet de
+          bedoeling de suggestie te wekken dat dit een academisch document is, maar eerder een politiek- en sociale
+          filosofische verhandeling. Daarnaast zijn wij wel degelijk geïnspireerd door inzichten uit wetenschap,
+          filosofie en religie, maar we stellen nadrukkelijk dat alles wat in dit manifest staat beschreven uiteindelijk
+          is ontstaan in de geesten van de auteurs zelf. We beroepen ons daarmee op onze wetenschappelijke en kunstige
+          vrijheid. Dit document dient voornamelijk als uitgangspunt voor verdere waarheidsvinding en is niet bedoeld
+          als absolute en onweerlegbare waarheid.</p>
+        <p>Dit manifest bestaat uit vier stukken. Een algemeen stuk, waarin wij onze visie geven op wat een mens tot
+          mens maakt en hoe ieders unieke kwaliteiten leiden tot verbondenheid, solidariteit en samenwerking, maar ook
+          op hoe deze waarden steeds meer onder druk zijn komen te staan. Daarna volgt een politiek-rechtsstatelijk en
+          filosofisch stuk, waarin wij onze visie geven op het politieke bestel, rechtsstaat en de samenleving, gevolgd
+          door een biologisch-relationeel stuk, waarin we een verband proberen te leggen tussen de samenleving en de
+          natuurlijke en tribale kant van het menszijn. Afsluitend geven we een visie op de toekomst, gebaseerd op de
+          ideologie zoals deze staat beschreven in de voorgaande onderdelen van dit manifest.</p>
+      </div>
+
+      <div id="manifest-anders">
+        <h2>De verbindende kracht van anders zijn</h2>
+        <p>Mensen zijn groepsdieren en leven beter met dan zonder elkaar. Sociale behoeften worden in groepsverband
+          beter ingevuld. Samen weet je meer en bereik je meer, waarbij iedereen zichzelf tegelijkertijd door interactie
+          verder kan ontwikkelen. Zodra de groep waarbinnen je samenwerkt diverser wordt, wordt het probleemoplossend
+          vermogen ook groter. Dat kan door elkaars verschillen te accepteren en te kijken naar de kwaliteiten van
+          mensen, in plaats van naar beperkingen. Naast de sociale behoefte wordt in groepsverband ook in fysiologische
+          behoeften, zekerheid, sociale acceptatie, waardering en zelfontplooiing voorzien. </p>
+        <p>Verbondenheid is een sleutelwoord in menselijke interactie, zowel in familiaire relaties als in
+          liefdesrelaties en meer platonische relaties. Verbondenheid biedt steun en rust en is wat een geciviliseerde
+          samenleving onderscheidt van barbarisme. Communiceren, leren en elkaars verschillen accepteren zijn essentieel
+          in het ontdekken en bevorderen van elkaars unieke kwaliteiten. Je kunt dan ook niet spreken over zaken en
+          onderwerpen in termen als “normaal” en “gewoon”. Dit zou geweld doen aan de complexiteit van mensen en
+          menselijke interactie en ondermijnt onze autonomie en het recht op zelfontplooiing. Diversiteit en de
+          acceptatie en tolerantie hiervan kunnen daarom gezien worden als niet te missen onderdelen van verbondenheid,
+          waardoor je paradoxaal genoeg kunt stellen dat individuele verschillen de belangrijkste voorwaarde is om tot
+          verbondenheid te komen.</p>
+        <p>Wat de mens uniek maakt is haar neiging tot zelfreflectie, complexe interactie en het stellen van vragen over
+          zichzelf en haar omgeving. Een cultuur waarin sprake is van normalisatie en codificering van gedrag en
+          omgangsnormen is dan ook een cultuur die de essentie van het menszijn onderdrukt en bovendien een cultuur die,
+          religieus c.q. seculier, er de facto c.q. de jure religieuze overtuigingen op nahoudt. Als een cultuur immers
+          stelt dat zij in de positie is gedrag te normaliseren, dan is het automatisch een cultuur die stelt een hoger
+          ideaalbeeld te hebben bereikt of hier kennis van zou hebben. Ter illustratie kunnen wij wijzen op de
+          normalisatiecultuur zoals wij die onder meer vinden in onderwijs, zorg en bedrijfsleven. Het constant
+          monitoren, toekennen van stoornissen omtrent gedrag en persoonlijkheid en het doen van preselectie, om enkele
+          voorbeelden te noemen, wekken de suggestie dat we in een wereld leven met een kenbaar referentiekader van hoe
+          een persoon “zou moeten zijn”. Dit referentiekader is vrijwel altijd “het gemiddelde”, een simpele wiskundige
+          formule waarbij men het aantal scores op een variabele deelt door het aantal metingen. Mensen worden hierdoor
+          gereduceerd tot een cijfer die je op een normaalverdeling kunt plaatsen, waarbij ongewenste afwijkingen worden
+          gezien als een storing in de data.</p>
+        <p>Dit wil niet zeggen dat dergelijke data en kennis geen enkel nut hebben, maar het dient met de grootst
+          mogelijke voorzichtigheid te worden geïnterpreteerd en gebruikt. Het gaat immers volledig voorbij aan het
+          unieke karakter van ieder individu en het miskent de rol van omgevingsfactoren in het bepalen van individuele
+          ontwikkeling. Bovendien leiden dergelijke praktijken tot groepsdenken en isolatie. Een perfect voorbeeld zien
+          wij in het idee van de “persoonlijkheidsstoornissen”, dat door de medische wereld is geïntroduceerd. Hier
+          heeft de normalisatiecultuur een punt bereikt waarbij iemands unieke persoonlijkheid tot ziektebeeld wordt
+          gemaakt, een ziekte die hij of zij deelt met lotgenoten. Wij kunnen stellen dat dit iets wegheeft van een
+          verbanning: je pikt iemand uit de normaalverdeling als afwijkende waarde en zet hem of haar op een nieuwe
+          normaalverdeling van “persoonlijkheidszieken”.</p>
+        <p>Onze huidige cultuur doet sterk geweld n aan het unieke karakter van ieder persoon, met als gevolg dat we
+          veel kansen laten liggen, talent verspillen, en bovenal mensen “dehumaniseren”. Mensen worden enkel gezien als
+          productie-eenheden, vervangbare radartjes in het grotere geheel, zonder dat duidelijk is wat dit grotere
+          geheel dan precies is of welk doel het dient. De waarschijnlijke oorzaak van dergelijke praktijken, die wij
+          stelselmatig in onze samenleving zien sinds de Franse revolutie en de opkomst van industrie en technologie, is
+          een gebrek aan leiderschap en een disfunctionerend politiek en sociaal stelsel. De beste tijden die de
+          mensheid in de afgelopen twee eeuwen heeft gehad zijn de tijden waarin democratie, sociale zekerheid en de
+          verzorgingsstaat relatief goed functioneerden, zonder de corrumpering van het grootkapitaal. Er is echter een
+          golfbeweging, waarbij goede en sociaal zekere tijden worden afgewisseld door tijden van onzekerheid en
+          corruptie. Dit doet de vraag rijzen of de mensheid wellicht gebaat is bij het ontdekken en ontwikkelen van
+          nieuwe vormen van democratie en volksvertegenwoordiging.</p>
+      </div>
+
+      <div id="manifest-rechtsstaat">
+        <h2>De rechtsstaat en de spreiding der machten</h2>
+        <p>Zodra er wordt gesproken over een land of een rechtsstaat, dan is de vraag wie of wat er in die context mee
+          wordt bedoeld. Alles wat het karakter van een land kenmerkt, van cultuur, gewoonten of trots kan het land of
+          de rechtsstaat zijn waar men over spreekt. De belangen van een land zijn al onze belangen, inclusief de
+          persoonlijke belangen als inwoner van dat land. Gezamenlijke belangen moeten worden beschermd door een
+          constitutie van een rechtsstaat, met basiszekerheden voor iedereen in die rechtsstaat. De constitutie, met in
+          ieder geval een grondwet, beschermt de vrijheden van alle burgers. Dit zijn fundamentele mensenrechten die
+          voortvloeien uit nationale en internationale wet- en regelgeving, ter bescherming van de waardigheid en de
+          waarde van het individu. Mensenrechten zijn universeel en vormen het fundament in iedere rechtsstaat. Iedere
+          rechtsstaat heeft een eigen mate van soevereiniteit waarbinnen mensenrechten kunnen worden aangevuld en
+          uitgelegd. De bescherming van deze mensenrechten is belangrijk, omdat ze ervoor zorgen dat ieder mens in ieder
+          geval het universele recht heeft op een menswaardig leven. Andere wet- en regelgeving moet altijd in
+          overeenstemming zijn met de normen die het fundamentele mensenrecht stelt.</p>
+        <p>Wij beschouwen mensenrechten dan ook als een vorm van natuurrecht; een hoger geldend universeel recht waarvan
+          het bestaan kenbaar is middels de rede. Iedere andere “lagere” positivistische vorm van recht is een direct of
+          indirect product van dit natuurrecht. Gelijkwaardigheid, vrijheid van mening en gedachte, vrijheid van
+          vereniging en recht op leven zijn voorbeelden van rechten die je hebt van de wieg tot het graf simpelweg omdat
+          je geboren bent. Deze rechten zijn immers kenbaar uit het gegeven dat de twee belangrijkste momenten uit
+          ieders leven, geboorte en sterfte, kunnen worden gezien als de grote gelijkwaardigheidsmomenten; een ieder
+          komt met niks ter wereld en verlaat het ook met niks, anders dan het feit dat men als individu bestaat. Elke
+          invloed in de tussentijd is perifeer en inferieur omdat het volgt uit het feit dat men het leven heeft
+          gekregen. Omdat wij geen aanwijzingen hebben dat deze twee momenten uit het leven anders zijn voor de een dan
+          voor de ander volgt hieruit logischerwijs dat mensenrechten reële, universele en hogere rechten zijn dan de
+          positivistische rechten.</p>
+        <p>Bij de totstandkoming van nationale wet- en regelgeving bepalen de machtsverhoudingen in dat land de richting
+          ervan. Ieder van ons heeft macht, wat zich het duidelijkst kenbaar maakt door geld of iets wat een financiële
+          waarde vertegenwoordigt. Geld en alles wat een waarde vertegenwoordigt zorgt voor een zekere mate van
+          zeggenschap bij de eigenaar. Nationale wet- en regelgeving zorgt voor de regulering en verdeling van alle
+          macht. Volgens de traditionele machtsverdeling van de Trias Politica zorgt de wetgevende macht voor deze wet-
+          en regelgeving, die wordt uitgevoerd door de uitvoerende macht en wordt gecontroleerd door de rechtsprekende
+          macht. Zo controleren deze drie machten elkaar. Een rechtvaardige verdeling van de machten moet misbruik door
+          machtsconcentratie bij één van deze drie machten tegengegaan.</p>
+        <p>Tegenwoordig is de scheiding tussen de drie traditionele machten niet erg strikt geregeld, waardoor er eerder
+          van een spreiding der machten kan worden gesproken. Sterker nog, met andere invloeden rijst de vraag of het
+          systeem achter de Trias Politica wel alle macht in een rechtsstaat omvat en een controlefunctie heeft. De
+          media kun je zien als een vierde vorm van macht. Alle mensen in een land zijn afhankelijk van de media om te
+          weten wat er speelt. Keuzes die worden gemaakt in televisie-uitzendingen, krantenartikelen en opiniestukken
+          hebben een grote invloed op de mening van een grote groep mensen. Met de macht van de media en de kracht van
+          het internet is het nog maar de vraag of de mening van het volk een goede afspiegeling is van de verschillende
+          meningen van journalisten. De media hebben een doorslaggevende stem bij de vraag welke gebeurtenissen wel en
+          geen aandacht verdienen en in welke vorm. De meningsvorming is immers afhankelijk van de keuzes die gemaakt
+          worden door het desbetreffende medium. Maar niet iedereen stelt zichzelf de vraag of een bewering wel klopt.
+          Sommige nieuwsitems roepen directe emotie op, waarna sommigen voorbijgaan aan de andere kant van het verhaal.
+          Daarbovenop komt het recente fenomeen van de sociale media. Een onbegrensde mediabron, waarbinnen iedereen
+          alles kan beweren en waarbij algoritmes ertoe leiden dat iedereen door zijn of haar interesses zijn eigen
+          mening bevestigd ziet worden. Je kunt je afvragen of dit wel de juiste richting is die we zijn ingeslagen met
+          de kracht van de vierde macht.</p>
+        <p>Het probleem van objectiviteit en subjectiviteit speelt hier een belangrijke rol. Objectieve kennisneming is
+          enkel mogelijk door inductie van het subjectieve. De oude Grieken waren al bekend met dit probleem: als alle
+          zwanen die wij zien wit zijn, dan kunnen we logischerwijs concluderen dat wit een intrinsieke eigenschap is
+          van de zwaan. Dit verondersteld echter dat wij álle zwanen in het verleden, heden en de toekomst, hebben
+          gezien. Zouden wij ergens een anderskleurige zwaan tegenkomen, dan is onze premisse gefalsificeerd.</p>
+        <p>Overigens heeft elk individu ook een zekere mate van macht. Iemand verkrijgt bijvoorbeeld macht door een
+          goedbetaalde functie of door zeggenschap in een organisatie. In vrijwel alle gevallen (doch niet exclusief)
+          gaat macht gepaard met geld. Geld is immers overal en leidt tot zeggenschap en invloed. Het is dan ook niet
+          gek dat financiële grootmachten de meeste invloed uit kunnen oefenen op de rest van de machten in een
+          rechtsstaat. Financiële beurzen laten al zien wat de invloed van het grootkapitaal is. Simpele speculaties
+          over de toekomst van een bedrijf kunnen al grote gevolgen hebben op de waarde ervan. Door investeringen en
+          overnames verplaatst het grootkapitaal geld om meer geld te kunnen verdienen. Het grootkapitaal verdient ook
+          geld doordat het ons drijft om meer en meer spullen aan te schaffen en op andere manieren geld uit te geven,
+          en door een sneller stijgende arbeidsproductiviteit dan loonstijging. Landen die verschillende
+          belastingtarieven hanteren vormen de ideale omstandigheden voor sommige grote ondernemingen om misbruik te
+          maken van gunstige belastingen. Zo wordt met het geld van het grootkapitaal nog meer geld verdiend. De macht
+          van het geld maakt het grootkapitaal rijker, waarmee het politieke partijen of individuele
+          volksvertegenwoordigers kan beïnvloeden. Financiële bijdragen voor campagnes, maar ook indirecte vormen van
+          bijdragen, zoals het laten drukken van verkiezingsposters of de belofte van werk voor de machthebbers in ruil
+          voor gunstige wet- en regelgeving voor het grootkapitaal is misschien nog maar het topje van de ijsberg wat
+          betreft de invloed van het grootkapitaal op de traditionele machten in een rechtsstaat. Naast deze
+          grootmachten vertegenwoordigen mensen samen ook een grote macht door middel van gemeenschappelijke kennis,
+          meningen en doorzettingsvermogen. Om deze scheve verhouding in de machtsstructuren tegen te gaan is het van
+          vitaal belang dat er wordt gekeken naar nieuwe vormen van democratie en bestuur die meer recht doen aan de
+          centrale functie van een democratische rechtsstaat: de vertegenwoordiging van het algemeen belang.</p>
+      </div>
+
+      <div id="manifest-democratie">
+        <h2>Democratie en de wil van het volk</h2>
+        <p>De betekenis van democratie, met de grondgedachte waarin het volk regeert, vervaagt jaar na jaar. Sinds de
+          eerste vormen van democratie heeft de westerse democratie zich ontwikkeld tot divers uiteenlopende
+          constructies. Democratie is zelfs hét sleutelwoord voor politici om aan het volk kenbaar te maken dat de wil
+          van het volk belangrijk is. Want de wil van het volk vormt een fundamentele bron van een legitieme
+          machtsuitoefening in een goed functionerend democratisch stelsel. De belangrijkste vraag is echter hoe de wil
+          van het volk zo goed mogelijk in overheidsbeleid kan worden vertaald.</p>
+        <p>Het verleden leert ons dat het volk directe inspraak is verloren in ruil voor indirecte vormen van inspraak.
+          Een vertegenwoordigende democratie is tegenwoordig de meest gebruikelijke en geaccepteerde vorm van
+          democratie. In de 21e-eeuwse westerse samenleving worden burgers vertegenwoordigd door volksvertegenwoordigers
+          in parlementen, senaten en andere regionale en internationale overheidsorganen. Ondanks dat burgers door
+          middel van hun stemrecht invloed uit kunnen oefenen op de richting van overheidsbeleid, staat deze mate van
+          inspraak in schril contrast met de mate van inspraak van burgers in de eerste beschreven democratische
+          stelsels in het Oude Griekenland. Het waren mannen in een selecte leeftijdscategorie die konden participeren
+          in volksvergaderingen, de voorloper van parlementaire vergaderingen. De eerste volksvergaderingen bestonden
+          uit duizenden Atheense burgers, die elke vergadering door loting van samenstelling wisselden. Er bestonden
+          geen politieke partijen en alle ingelote burgers kregen de mogelijkheid om te spreken, voorstellen te doen en
+          te stemmen. Toch stuitten volksvergaderingen op kritiek, aangezien er twijfel ontstond of de burgers wel
+          omwille van het algemeen belang participeerden in de vergadersessies. Iedere burger die werd geloot kon immers
+          alles ter sprake brengen, waardoor theoretisch gezien elke persoonlijke aangelegenheid onderwerp van gesprek
+          kon worden. Het algemeen belang kon hierdoor worden ondergesneeuwd door persoonlijke belangen of ambities.
+          Daarom werden wetgevingsprocessen uitgebreid met invloeden vanuit raden en senaten. Volksvertegenwoordigers
+          die deel uitmaakten van deze organen werden hoofdzakelijk door de aristocratie gekozen. Daarmee kreeg de
+          betekenis van democratie voor het eerst een andere betekenis dan de betekenis waarin volk regeert. Niet de
+          gehele bevolking, maar slechts de aristocratie werd geacht het beste in staat te zijn om de juiste
+          volksvertegenwoordigers te kiezen. Zo evolueerde democratie, waarin het volk regeert, tot een representatieve
+          democratie, waarin volksvertegenwoordigers het volk vertegenwoordigen.</p>
+        <p>Is het dan niet mogelijk om een 21e-eeuwse democratisch stelsel zo in te richten dat er in de basis
+          daadwerkelijk sprake is van directe inspraak van het volk in wet- en regelgeving? Een volksvergadering of een
+          vergelijkbare vorm van inspraak is om meerdere redenen lastig uit te voeren, maar allesbehalve onmogelijk.
+          Ondanks dat alleen parlementaire vergaderstelsels als uitgangspunt worden genomen voor het creëren van een
+          ideaalbeeld van een goed functionerende democratie, is een volksvergadering misschien wel dé manier om het
+          fundament van wet- en regelgeving zo goed mogelijk aan te laten sluiten op de wil van het volk. Een
+          volksvergadering zou er in een andere tijd toe leiden dat iedere volwassen burger deel kan nemen in
+          vergaderingen op basis waarvan overheidsbeleid wordt vastgesteld. Zo is er sprake van directe democratie,
+          waarin het volk regeert door directe inspraak. Een ratioloting kan ervoor zorgen dat de samenstelling van de
+          vergaderingen een goede afspiegeling vormt van de samenleving. Zo kunnen alle stemgerechtigden, van studenten
+          tot ouderen, geloot worden in een volksvergadering. Het aantal mensen dat studeert, met pensioen is, of
+          werkzaam is in een bepaalde branche of sector bepaalt dan de grootte van de afvaardiging.</p>
+        <p>Het gebrek aan interesse in de politiek vormt echter een probleem en is mede debet aan de te grote afstand
+          die mensen voelen met de politiek. Enerzijds worden burgers nu minimaal betrokken bij wet- en
+          regelgevingsprocessen, anderzijds zijn politieke onderwerpen zo uiteenlopend, complex en langdradig dat men
+          veel politiek inhoudelijke discussies vaak saai vindt. Zo mist een deel van de kiezers belangrijke informatie
+          over de richting die een politieke partij op wil gaan. Toch kunnen wij niet stellen dat de persoonlijke
+          karakteristieken van een kiezer en de wijze waarop deze tot zijn of haar keuze komt invloed heeft op de
+          kwaliteit van de gemaakte keuze. Waar de één op gevoel en met beperkte informatie een keuze maakt, doet de
+          ander dit na bestudering van cijfers en/of literatuur. Gevoelsmatig is de keuze van de laatste zwaarwegender
+          dan die van de eerste, maar dit hoeft niet per se het geval te zijn. Om te beginnen moet je niet te veel
+          gewicht geven aan zaken als cijfers en meningen van beleerde mensen. Het zijn immers precies dat: meningen, en
+          geen feitelijke weergaves. Enkel in de wiskunde komen wij zekerheden tegen, zaken als economische cijfers.
+          Sociaalwetenschappelijke en juridische literatuur hebben een ondersteunende waarde, maar vormen geen een
+          feitelijke weergave. Bovendien zouden wij de complexiteit van de menselijke natuur miskennen als wij keuzes
+          die gemaakt worden vanuit gevoel negeren. Gevoelsmatig beslissingen maken is snel en efficiënt maar
+          tegelijkertijd een ingewikkeld mentaal proces waar het bewuste en onderbewuste deel van het brein vele vormen
+          van informatie in een korte tijd analyseren en hieruit een mening vormen.</p>
+        <p>Dit alles gaat ten koste van de politieke verhoudingen in een samenleving ten opzichte van de wil van het
+          volk. Tegelijkertijd bestaan er grote twijfels of verschillende vraagstukken door de politiek beantwoord
+          moeten worden en zo ja, of politici zich wel concentreren op het meest urgente en of ze wel doen wat ze voor
+          hun verkiezing beloofden. Zo ontstaat er naast de gewone wereld ook een ‘politieke wereld’, die zich aanpast
+          aan de mate van kennis en interesse in politieke onderwerpen vanuit de bevolking. Ondanks dat er wel
+          volksvertegenwoordigers zijn die vanuit hun ideaal strijden voor datgene waar ze in geloven, worden
+          hoofdzakelijk kandidaten geselecteerd die zich het beste kunnen handhaven in de politieke wereld en het
+          politieke spel. Tegenwoordig zijn volksvertegenwoordigers specialisten, die communicatieve vaardigheden
+          koppelen aan een visie en een goed gevoel hebben voor het politieke spel. Zij zijn degenen waarvan wordt
+          verwacht dat zij zich het beste kunnen manoeuvreren in de politieke wereld, waarin voorstellen en standpunten
+          veranderlijk zijn. Want door de juiste compromissen te sluiten en door de juiste contacten binnen en buiten de
+          politiek krijgen politici de mogelijkheid om hun carrière glans te geven. Dit is de politieke wereld die we
+          kennen, die we ‘gewoon’ zijn gaan vinden en die de meesten van ons ‘democratisch’ noemen.</p>
+        <p>Tegelijkertijd daalt het vertrouwen in de politiek, waardoor de opkomst bij verkiezingen ook daalt. Soms
+          leidt dit ook tot meer ‘strategische stemmen’, een stem uitgebracht op basis van angst dat een bepaalde
+          politieke partij of stroming de grootste wordt, terwijl de partij waar de stem op is uitgebracht ook niet
+          datgene vertegenwoordigd waar de kiezer achter staat. Zo wordt de wil van deze kiezer niet meegenomen in de
+          uitslag van verkiezingen, maar slechts zijn of haar angst. De keuze voor een volksvertegenwoordiger, omdat
+          diegene in de ogen van de kiezer het beste de wil van het volk kan vertegenwoordigen, wordt hierdoor ingeruild
+          voor een keuze met angst als doorslaggevende raadgever. Angst volgt uit onwetendheid, met een keuze waar nooit
+          voldoende inhoudelijke onderbouwing voor is. Een kiezer is ook onwetend en dus onbewust angstig doordat er
+          weinig bekend is over het fundament waar politieke partijen voor staan. De waan van de dag kan politieke
+          keuzes, waaronder verkiezingsprogramma’s, beïnvloeden. Een politieke keuze van de kiezer kan tot vlak voor het
+          moment van stemmen veranderen door een gebeurtenis of een emotie bij de kiezer. Dit gaat ten koste van het
+          geloof in de ideologie op grond waarvan veel politieke partijen zijn opgericht. Geen enkele democratie is echt
+          volledig democratisch als het volk houvast mist door het ontbreken van het fundament van het ideaal waar
+          politieke partijen voor staan.</p>
+        <p>Politieke partijen maken gebruik, en soms misbruik, van emoties bij kiezers. Er kan voorbij worden gegaan aan
+          de verzameling van standpunten van politieke partijen door er één gevoelig onderwerp uit te lichten. Door
+          vervolgens te roepen wat veel burgers over dat onderwerp denken, kunnen partijen relatief gemakkelijk stemmen
+          binnenhalen. Dit is een veelgebruikte troef binnen het politieke spel. Logisch, aangezien sterke kreten en
+          oneliners goed scoren in de media. Goed getimede uitingen kunnen dan ook de huidige democratie ondermijnen,
+          want ook hierdoor wordt de vertaling van de wil van het volk in overheidsbeleid beperkt. Een emotionele
+          reactie gaat immers zelden gepaard met het ideaalbeeld van de kiezer voor de gehele samenleving. Daarom leiden
+          kortetermijnoplossingen vaak tot snelle steun van de bevolking. Een focus op de periode tot aan de volgende
+          verkiezingen vanuit de politiek leidt tot een gebrek aan een langetermijnvisie. Langetermijnoplossingen die
+          leiden tot kortetermijnfrustraties zijn echter nog altijd beter dan kortetermijnoplossingen die leiden tot
+          langetermijnfrustraties.</p>
+        <p>De politiek gebruikt het politieke spel ook om ‘sensatiepolitiek’ te bedrijven. Dit is een manier van
+          politiek bedrijven die het fundament van het ideaal waar politieke partijen voor staan ondermijnt. Politici en
+          politieke partijen die hun campagnes puur richten op het afbranden van tegenkandidaten getuigen van te weinig
+          vertrouwen in de kracht van het eigen verhaal. Het toneelstuk van menig politiek debat richt zich voor een te
+          groot deel op andere personen of partijen, terwijl de wetgevende macht gebaat is bij inhoudelijke debatten,
+          gericht op pragmatische oplossingen voor problemen in de samenleving. De wetgevende macht schiet zijn eigen
+          doel voorbij zodra debatten bestaan uit mooie woorden die hoofdzakelijk gemaakte fouten verbloemen, waarna men
+          overgaat tot de orde van de dag, of zodra een aanzienlijk deel van de discussie bestaat uit antwoorden op
+          vragen die niet zijn gesteld.</p>
+        <p>Een pragmatische benadering van politiek bedrijven door altijd oog te hebben voor de wil van het volk, zelfs
+          als deze misschien jouw eigen ideaalbeeld overstijgt, zorgt voor een nieuw vertrouwen in de politiek en het
+          volk. Een volksvertegenwoordiger met een ander ideaalbeeld voor de wereld dan jij kan met argumenten jouw
+          eigen verhaal versterken, maar ook onderuithalen. Puur omdat een bijdrage afkomstig is van een
+          volksvertegenwoordiger of partij die in de basis haaks staat op jouw ideologie is nooit een reden om niet te
+          luisteren naar zijn of haar verhaal.</p>
+        <p>De opkomst van kiezers bij verkiezingen laat zien dat een aanzienlijk deel van de stemgerechtigden niet gaat
+          stemmen. Meer vertrouwen in de overheid en de politiek kan zorgen voor een hogere opkomst. Loze beloftes
+          zorgen juist voor wantrouwen, evenals politieke besluitvorming op basis van vertrouwelijke stukken en
+          bijeenkomsten. Om ook hier de wil van het volk zo goed mogelijk te vertalen naar overheidsbeleid, moet
+          sensatiepolitiek plaats maken voor transparante politieke besluitvorming. Een parlement kan nooit een volledig
+          objectief waardeoordeel geven over een onderwerp als verantwoordelijke ministers of coalitiepartijen over meer
+          informatie beschikken dan het parlement. De uitvoerende macht en de wetgevende macht moeten te allen tijde
+          over dezelfde informatie beschikken. De wetgevende macht vertegenwoordigt immers de wil van het volk. Maar een
+          democratie waarin het volk regeert en die de wil van het volk zo goed mogelijk in overheidsbeleid vertaalt,
+          vraagt om een zoektocht naar een antwoord op de vraag wat rechtvaardig is.</p>
+      </div>
+
+      <div id="manifest-rechtvaardig">
+        <h2>Rechtvaardigheid</h2>
+        <p>Veel mensen staan, tenminste in woord, voor onderwerpen als rechtvaardigheid, democratie en solidariteit,
+          iets dat zij delen met politieke partijen en stromingen. Toch wordt de keuze voor een politieke richting
+          steeds lastiger, aangezien keuzes veelal moeten worden gemaakt op basis van een grote collectie open deuren en
+          oneliners die politici voorafgaand aan publieke debatten hebben ingestudeerd. Maar wat is rechtvaardigheid
+          eigenlijk? Het is het beginsel waar ieder mens zich bij zal aansluiten, maar waarbij de meningen behoorlijk
+          uiteen kunnen lopen. Als mensen willen wij een vrij en menswaardig leven kunnen leiden. Daarvoor is
+          rechtvaardige wet- en regelgeving nodig voor mens én natuur. Wat rechtvaardigheid betekent kan worden bepaald
+          vanuit de sluier der onwetendheid. Dat is de hypothetische positie vanuit waar je niets weet over alles wat je
+          kunt gebruiken om een maatschappij in jouw voordeel in te richten. Je weet niets van je sociale afkomst, zoals
+          je uiterlijk, wie je familie is en of je veel geld hebt. Je weet wel algemene economische en psychologische
+          feiten over het leven en je hebt wetenschap van het bestaan van een zekere mate van schaarste. Er is dus wat
+          te verdelen en het is onvermijdelijk dat sommigen het beter krijgen dan anderen. Wat is dan vanuit dát
+          perspectief rechtvaardig? Een eerlijke middenweg tussen de meest bedeelden en de minst bedeelden begint bij
+          gelijke vrijheid voor iedereen. Ook in jouw beeld van een ideale samenleving weet je door de sluier der
+          onwetendheid niet of je het goed zult krijgen of niet.</p>
+        <p>Mensen moeten vrij kunnen zijn, zonder de aantasting van de vrijheid van anderen. Deze uitleg van vrijheid is
+          zelfs mogelijk in een nachtwakersstaat, waarin een overheid alleen als taak heeft om de veiligheid van mensen
+          te garanderen door te zorgen voor politie en krijgsmacht. Maar vrijheid omvat meer dan dat. In welvarende
+          rechtsstaten met overheden die zich terughoudend opstellen is vaak veel rijkdom aanwezig, maar doorgaans bij
+          een kleine groep meestbedeelden naast een grotere groep minderbedeelden. Er is sprake van vrijheid, maar niet
+          van een gelijkwaardig speelveld met eerlijke kansen voor iedereen. In een ideale wereld zou iedereen een
+          menswaardig bestaan kunnen leiden, waarbij er weliswaar verschillen zijn in de hoeveelheid macht, maar waarbij
+          tegelijkertijd de kansen op ontwikkeling in het leven zo eerlijk mogelijk zijn verdeeld. Hiervoor is het
+          onvermijdelijk dat zodra de meestbedeelden het meeste verdienen, dat ook de minstbedeelden hiervan naar
+          maatstaven van billijkheid meeprofiteren. Financiële rijkdom is altijd mogelijk en toegestaan, maar in een
+          land in rijkdom moet armoede een punt van schaamte zijn. Als een land in rijkdom armoede accepteert, dan rijst
+          de vraag waarom dit het geval is en welke mogelijkheden er zijn om armoede te voorkomen. Minimumvoorwaarden
+          voor welvaart en welzijn voor mens en natuur vormen samen het sociaal fundament. Dit zijn sociaaleconomische
+          rechten die de waardigheid van mens en natuur beschermen. Er mag ten opzichte van niemand een tekort zijn in
+          de toegang tot en het recht op sociaaleconomische rechten. De minstbedeelden die onder deze scheidslijn
+          dreigen te raken dienen bij te worden gestaan door de meest bedeelden. Dit biedt de zekerheid voor een waardig
+          bestaan van mens en natuur op lange termijn. Zo heeft bijvoorbeeld iedereen de kans op ambten of andere
+          posities, maar onder voorwaarde van billijkheid van gelijke kansen. Hierbij is een onderscheid op grond van
+          afkomst, religie, seksuele geaardheid, politieke gezindheid of een fysieke beperking onacceptabel. Gelijke
+          kansen worden bepaald aan de hand van een billijk oordeel over datgene wat iemand wel en niet doet. Niemand
+          zal betogen dat hij of zij vóór ongelijkheid is. Maar de ergste vorm van ongelijkheid is proberen ongelijke
+          dingen gelijk te maken.</p>
+        <p>Vrijheid ontstaat door rust in jezelf. Een gevoel dat ontstaat door zekerheden in het leven. Het eeuwenoude
+          economische groeiprincipe is gericht op vrijheid van het individu en een land dat altijd op zoek moet naar
+          groei, maar het leidt tot de vraag wat er na die groei volgt. De wil om te groeien is voor eenieder van ons
+          het streven naar ontwikkeling en zelfontplooiing. Maar in een wereld waarin we zicht hebben op alles wat nodig
+          is, waarin we weten wat overbodige luxe is en wat van fundamenteel belang is voor mens en natuur, is zekerheid
+          te vinden in stabiliteit. Dit betekent dat een economisch rechtvaardig systeem gebaseerd is op stabiliteit op
+          basis van een sociaal fundament en een plafond. Een plafond dat de grens vormt van economische en ecologische
+          maatregelen. Voor een langdurige en duurzame toekomst voor mens en natuur is deze balans nodig. Binnen deze
+          balans kan worden gezocht naar de politieke besluitvorming die het beste aansluit bij de wil van het volk.</p>
+      </div>
+
+      <div id="manifest-belang">
+        <h2>Het algemeen belang</h2>
+        <p>De wil van het volk is geen momentopname van een selecte groep burgers, maar wordt omschreven als het
+          algemeen belang. Het algemeen belang is een verzameling van verschillende behoeften die aanwezig zijn bij de
+          mens en natuur, deels gekoppeld aan relatieve normen en waarden. Normen en waarden zijn veranderlijk en passen
+          zich aan de ontwikkelingen van mens en natuur aan.</p>
+        <p>Een politiek systeem organiseert de wijze waarop mens en natuur in hun levensbehoeften worden voorzien. Het
+          unieke karakter van ieder mens maakt dat menselijke behoeften verschillende. Daarnaast heeft de mens
+          persoonlijke behoeften. Zo hebben mensen behoefte aan zekerheid, maar ook aan afwisseling. De mens wil worden
+          uitgedaagd of worden verrast door veranderingen die het leven interessanter maken. Ook is er een behoefte aan
+          liefde en verbinding met anderen. Dit is de behoefte om te communiceren en om geaccepteerd te worden.
+          Daartegenover staat de behoefte om betekenis te vinden in het leven. Verder heeft eenieder in verschillende
+          mate de behoefte om zichzelf te ontwikkelen.</p>
+        <p>Om in de menselijke behoeften te kunnen voorzien moet ook worden voorzien in de behoeften van flora en fauna.
+          Flora en fauna spelen immers een belangrijke rol in de levenscyclus van de aarde. Er heerst een
+          alleenheerschappij van de mens op de talloze levens van flora en fauna. Politieke keuzes moeten worden
+          afgewogen aan de hand van de belangen van mens, dier en aarde, om zo onnodige inmenging van de mens door de
+          mens af te wentelen.</p>
+        <p>Alle mensen, flora en fauna moeten te allen tijde worden voorzien in hun basisbehoeften, namelijk de
+          sociaaleconomische rechten. Mensen hebben behoefte aan onderwijs, voedsel, water, gelijkheid, een politieke
+          stem, vrede, inkomen, medische zorg, onderwijs en een dak boven het hoofd. Basisbehoeften met de zekerheid dat
+          je altijd een beroep kunt doen op de fundamentele rechten uit het sociaal fundament. Tegelijkertijd moet er
+          oog zijn voor de gevolgen van alle te nemen maatregelen voor flora en fauna. Het ecologisch systeem van de
+          aarde is essentieel voor het voortbestaan van mens en natuur. De bescherming ervan valt ook binnen het sociaal
+          fundament, evenals de basisbehoeften en vrijheden voor dieren. Het recht van de natuur moet worden beschermd
+          en geaccepteerd, tenzij er sprake is van inmenging van de mens. Zodra dierenwelzijn in het geding is door het
+          handelen van mensen, dan is het ook aan mensen om het welzijn van dieren te beschermen.</p>
+        <p>Secundaire behoeften dienen voor iedereen op maat aanwezig te zijn. Secundaire behoeften maken het leven
+          aangenamer, zoals een grotere woning, technische apparatuur of vakanties. Deze behoeften moeten voor iedereen
+          aanwezig zijn, afhankelijk van de mate van de desbetreffende behoefte. Ieder mens die binnen zijn of haar
+          mogelijkheden een positieve bijdrage voor de samenleving levert moet de kans krijgen om voorzien te worden in
+          zijn of haar secundaire behoeften.</p>
+      </div>
+
+      <div id="manifest-huwelijk">
+        <h2>Het huwelijk</h2>
+        <p>Het huwelijk is een van oudsher door de machthebber gereguleerde aangelegenheid. Afhankelijk van de temporale
+          en culturele context komen de volgende huwelijksvormen het meeste voor:
+          <ul>
+            <li>Monogamie: een huwelijkse verbintenis tussen twee personen, eventueel van hetzelfde geslacht</li>
+            <li>Polygamie: een huwelijkse verbintenis tussen één persoon en meerdere individuen van het (normaliter)
+              andere geslacht, wederom onder te verdelen in:</li>
+            <ul>
+              <li>Polygynie: één man en meerdere vrouwen</li>
+              <li>Polyandrie: één vrouw en meerdere mannen</li>
             </ul>
-          </div>
-        </nav>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+            <li>Groepshuwelijk: een polyamoreuze huwelijkse verbintenis tussen meerdere personen van hetzelfde of het
+              andere geslacht, waarbij een ieder geacht wordt gehuwd te zijn met alle anderen</li>
+          </ul>
+        </p>
+        <p>In de westerse context is het monogame huwelijk historisch de norm, ook al hield de politieke/economische
+          elite er langdurig een systeem op na van de facto polygynie middels een systeem van maîtresses, iets wat
+          uiteraard ook weer verschilde per culturele/historische context. Westerse staten in het algemeen en Nederland
+          in het bijzonder kennen sinds de komst van Napoleon en de daaruit voortvloeiende staatkundige en juridische
+          veranderingen een relatief strikte vorm van monogamie, waarbij het aangaan van een relationele verbintenis met
+          meer dan één persoon nietig is en strafrechtelijk kan worden vervolgd. Tevens zien we deze voorkeur voor
+          monogamie inmiddels terug in de culturele normen en waarden, waarbij op elke andere vorm van het aangaan van
+          relaties met anderen een enorm taboe rust.</p>
+        <p>Kijken we echter naar de totaliteit van de menselijke geschiedenis, dan zien we dat een wettelijke
+          (geschreven of ongeschreven) regulering van het huwelijk, in het bijzonder het monogame huwelijk, sterk
+          samenhangt met de opkomst van het privébezit en de daaruit voortvloeiende opkomst van de staat. Ook al zijn
+          monogame relaties zo oud als de mensheid zelf, en zéér waarschijnlijk de historisch meest voorkomende
+          relatievorm, we kunnen concluderen dat polygamie, en dan in het bijzonder polygynie, alsmede groepshuwelijken,
+          veel voorkomende en geaccepteerde relatievormen waren. Hierbij speelde met name het concept van de “Alfa” een
+          belangrijke rol: de machtigste man had het recht op de meeste vrouwen. Dit is vergelijkbaar met het gedrag van
+          onze evolutionaire neven en nichten, de primaten. Voor een deel is dit menselijke gedrag dus biologisch te
+          verklaren: de machtigste man wordt geacht het beste genetische materiaal te hebben en dient zich daarom het
+          meeste voort te planten. Voor een deel is dit ook economisch te verklaren: de machtigste man heeft de middelen
+          om meerdere vrouwen te onderhouden. Maar het belangrijkste hier is de factor macht: door voor meer, en onder
+          veel omstandigheden “sterker”, nageslacht te zorgen zorgt de machthebber ervoor dat hij “over zijn graf” kan
+          regeren. Dit is dan ook hoe wij het huwelijk en voortplanting kunnen beschouwen; als een instrument om macht
+          uit te oefenen</p>
+        <p>Mede hierom zijn religies en staten het huwelijk gaan reguleren. Relaties en nageslacht vormen een
+          machtsbasis, en deze machtsbasis controleren verlegt de macht van het individu naar de staat. Daar komt bij
+          dat het huwelijk de belangrijkste bron is van het historisch ontnemen van de rechten van de vrouw. Zij is
+          immers gedegradeerd tot het bezit van de man. Door de relationele macht bij de man te leggen kreeg hij immers
+          een garantie dat het nageslacht, en de daarbij behorende erfelijkheidsrechten die voortvloeien uit het bestaan
+          van privébezit, ook daadwerkelijk van hem was.</p>
+        <p>Wij zien de regulering van relaties dan ook als de bron van macht voor een staat, aangezien het de bron van
+          macht is van het individu. Door regulering van relaties op een monogame manier kan de machthebber deze
+          machtsbasis in kleine, overzienbare deeltjes opsplitsen en voorkomen dat één of enkele individuen te veel
+          macht naar zich toetrekken. Recent hebben we een verdere individualisering gezien door het gemakkelijk
+          toepasbare recht op echtscheiding en het feit dat mensen in de naweeën van de seksuele revolutie en het
+          toekennen van meer rechten aan de vrouw op zoek gaan naar nieuwe, doch niet juridische, vormen van relaties.
+          Wij kunnen dan ook stellen dat het zeer wenselijk is dat het huwelijk in zijn huidige vorm niet blijft bestaan
+          en dat we moeten streven naar de afschaffing van de strenge juridische regulering van relaties tussen twee of
+          meer volwassenen. Dit betekent dat men juridisch vrij is in het aangaan van relaties met personen van achttien
+          jaar of ouder, ongeacht het aantal betrokken personen of geslacht. Het grote gevolg hiervan is dat men vrij is
+          met wie men zich associeert, in elke vorm en voor elke periode.</p>
+      </div>
+
+      <div id="manifest-mens">
+        <h2>De menselijke natuur en het streven naar een hogere ethische samenleving</h2>
+        <p>Essentieel in elk ideaal is dat men kijkt naar de intrinsieke menselijke natuur. Door de geschiedenis heen en
+          tot op de dag van vandaag streeft de mens immers naar het bereiken van een “hoger” stadium van ontwikkeling.
+          In moderne tijd wordt dit vaak materialistisch geïnterpreteerd: hoe meer spullen je hebt hoe beter. Historisch
+          gezien is dit vaker, doch zeker niet exclusief, geïnterpreteerd in de zin van het bereiken van een hoger
+          ethisch, sociaal en intellectueel stadium. Dit uitte zich oorspronkelijk in de vorm van religie (animistisch,
+          polytheïstisch en monotheïstisch), waarbij abstracte entiteiten de referentie vormden. Onder invloed van de
+          secularisatie is dit later op een humanitair niveau geuit, met concepten als de übermensch, de renaissanceman
+          en de verlichte denker.</p>
+        <p>De mens is een dier, maar onderscheidt zich door zijn hoge mate van zelfbewustzijn. Wij gaan er echter van
+          uit dat alle levende wezens een bewustzijn hebben en, op wat voor manier dan ook, een eigen “persoonlijkheid”
+          bezitten, zelfs de meest simpele eencelligen. Evolutie zou anders niet mogelijk zijn geweest. De uitzonderlijk
+          hoge mate van zelfbewustzijn van de mens brengt echter een grote verantwoordelijkheid voor het andere leven
+          met zich mee.</p>
+        <p>Ondanks dat dit niet altijd expliciet gesteld wordt, streeft de mens nog steeds naar het bereiken van een
+          “hoger” stadium van ontwikkeling, wat dit ook moge zijn. Wij zien echter, zoals eerder gesteld, dat zich dit
+          vooral uit in materialisme en zelden tot nooit op meer cultureel en intellectueel gebied. Waar dit wel wordt
+          gedaan is dit vooral in naam. Denk aan het concept van de multiculturele samenleving, een streven naar het
+          naast elkaar kunnen bestaan van verschillende culturen en etniciteiten. In de praktijk zien wij echter dat
+          deze samenlevingsvorm tot grote spanningen leidt en in wezen niets anders is dan een moderne vorm van westerse
+          culturele suprematie. Er wordt immers alleen binnen bepaalde kaders van de norm afgeweken, maar het
+          onderliggende fundament staat niet ter discussie.</p>
+        <p>Wij zien dit dan ook als een uitingsvorm van de dualiteit van de menselijke natuur. De mens is naar ons
+          inzicht niet intrinsiek goed of slecht, maar leeft met een constante spanning tussen het dierlijke en het
+          transcendente. Een analogie kan getrokken worden met het Freudiaanse concept van de Id, Ego en Superego en de
+          Libido en Thanatos. Een mens is in essentie een dier dat wil overleven en voortplanten (Libido) maar ook een
+          dier met een immanente wil tot destructie van tegenstanders (Thanatos). Dit dierlijke staat op gespannen voet
+          met de mens als sociaal en moreel wezen. Het zelfbewuste aspect van de mens brengt met zich mee dat hij het
+          dierlijke in zichzelf herkent en veracht, strevend naar het bereiken van een overkoepelende “goede” waarheid.
+          Deze dualiteit van de mens is naar ons inzicht de reden van het consequent falen van religies en ideologieën
+          van weleer: deze zijn nooit in staat geweest het dierlijke aspect van de mens te benoemen of te “temmen”.</p>
+        <p>Wij hoeven ons dan ook geen enkele illusie te maken over onze eigen vergezichten; dat is exact wat het is,
+          een vergezicht. Een pad dat wordt uitgezet naar een absolute waarheid die feitelijk onkenbaar en onbereikbaar
+          is. Het is dan ook niet het einddoel dat ertoe doet, deze is immers onkenbaar. Het is het pad ernaartoe dat
+          belangrijk is.</p>
+        <p>Machthebbers en charlatans door de geschiedenis heen en tot op de dag van vandaag hebben onze voorouders
+          onder controle gehouden met valse beloften over een gouden toekomst, vrij van pijn, ziekte en ongeluk. Wij
+          moeten echter erkennen dat deze utopische toekomst onbereikbaar en wellicht zelfs onwenselijk is. Het zou
+          immers het einde van de geschiedenis betekenen. Wat er wel toe doet is het streven náár deze onbereikbare
+          toekomst. De mens is een dier, geen transcendent wezen, en dient zich geen illusies te maken over het bereiken
+          van een dergelijk stadium. Het pad ernaartoe is wat relevant is.</p>
+      </div>
+
+      <div id="manifest-manvrouw">
+        <h2>Man-vrouw verhouding</h2>
+        <p>Sinds mensenheugenis staat de man-vrouwverhouding direct of indirect centraal in alle aspecten van ons leven,
+          van politiek tot onderwijs en van religie tot taal. Het oude testament, als waarheid aanschouwd door alle
+          abrahamitische religies, opent er zelfs mee in de vorm van het verhaal van Adam en Eva. Adam werd geschapen
+          als de eerste mens en Eva, als vrouw, werd geschapen als zijn eigendom en metgezel. Eva’s verleiding door de
+          slang en haar daaropvolgende verleiding van Adam betekende de val van de mens en de verbanning uit de tuin van
+          Eden. Een oud verhaal dat tot op de dag van vandaag de man-vrouwverhouding bepaalt.</p>
+        <p>Ook al is het verhaal zelf op vele manieren uit te leggen (het is nu eenmaal een allegorie), we kunnen
+          stellen dat de meest reële interpretatie is dat Eva Adam heeft verleid tot seksuele handelingen, waarmee de
+          mens derhalve de macht heeft verkregen tot het creëren van leven, een macht die eigenlijk aan God voorbehouden
+          was. Het verhaal zelf is symbolisch en niet gestoeld op historische gebeurtenissen, maar het is nog altijd
+          hoogst relevant om twee redenen. Ten eerste beïnvloedt het nog altijd de manier waarop naar vrouwen gekeken
+          wordt en ten tweede heeft de symboliek wel degelijk een kern van waarheid.</p>
+        <p>Sinds de Franse revolutie heeft de vrouw langzaam maar zeker meer rechten gekregen. De rechten van met name
+          westerse vrouwen zijn zelden goed in historisch perspectief en worden slechts door enkele culturen uit het
+          verleden geëvenaard. Dit neemt niet weg dat er nijpende problemen zijn omtrent de rechten van de vrouw en,
+          hieruit voortvloeiend, de rechten van de man.</p>
+        <p>De eerste twee golven westers feminisme draaiden om relatief concrete en duidelijk aanwijsbare doelen.
+          Vrouwen wilden stemrecht, recht op onderwijs, recht op werk én recht op het vrijelijk kunnen beoefenen en
+          ontdekken van hun seksualiteit. Dit zijn zaken die enkel toegejuicht kunnen worden. De laatste decennia is er
+          echter sprake van een kentering en zijn de rechten van zowel vrouwen als mannen in het geding gekomen. Onder
+          het mom van zedendelicten hebben wij de opkomst van een nieuwe puriteinse beweging mogen aanschouwen, die
+          zichzelf presenteert als het volgende stadium van feminisme. Een wolf in schaapskleren…</p>
+        <p>De man en de vrouw zijn niet gelijk, maar wel gelijkwaardig. De man heeft een fysiek overwicht ten opzichte
+          van de vrouw, maar hij heeft haar tevens nodig. Het is immers de vrouw die de capaciteit heeft om leven te
+          baren. Vanuit biologisch perspectief kunnen we dus stellen dat er een natuurlijke machtsbalans is tussen de
+          man en de vrouw: de man heeft de macht de vrouw te “vernietigen” maar daarmee zou hij tevens zichzelf
+          vernietigen. Er is dus een intrinsieke machtsbalans; de één kan niet zonder de ander. De twee delen maken
+          elkaar compleet.</p>
+        <p>De man-vrouwverhouding is dus tevens intrinsiek een seksuele verhouding. Zonder seks is er geen noodzaak twee
+          geslachten te hebben van dezelfde soort. Dit alles bepaalt de manvrouwverhouding: alles draait om seks,
+          behalve seks. Seks draait om macht. De macht die de twee geslachten over elkaar proberen uit te oefenen.</p>
+        <p>Een man hoeft theoretisch weinig te investeren in nageslacht. Hij is feitelijk een donor, de vrouw is degene
+          die het kind draagt en voedt. Vanwege zijn fysieke overwicht is de man dus in staat tot het volledig domineren
+          van de vrouw. Hij kan haar immers tot seks dwingen, de zogenaamde verkrachting. Vrouwen hebben over het
+          algemeen een fysiek zwakkere positie ten opzichte van de man en dienen dus absoluut hiertegen in bescherming
+          te worden genomen. Indien de man zijn macht tot dwang wordt ontnomen, is er immers een herstel van de
+          machtsbalans. Dankzij ethisch besef gecombineerd met wetgeving en actieve vervolging is de overgrote
+          meerderheid van de mannen gelukkig niet in staat tot het begaan van een dergelijk misdrijf, wat de
+          man-vrouwverhouding tot een gezonder en natuurlijker evenwicht brengt. De verleiding staat dan weer voorop, de
+          enige eerlijke manier waarop het liefdesspel gespeeld kan worden.</p>
+        <p>De vrouwelijke bevrijding gaat dus hand-in-hand met de mannelijke bevrijding. Als beide geslachten geen macht
+          over elkaar kunnen uitoefenen, is het speelveld gelijk. In recente decennia zijn we echter getuige geweest van
+          een herkomst van de vrouwelijke onderdrukking, en daarmee ook de mannelijke onderdrukking. Paradoxaal genoeg
+          wordt dit spel gespeeld over de rug van de vrouw zelf. Middels een zéér extensieve interpretatie van het
+          zedendelict (denk aan concepten als seksuele intimidatie) probeert men een nieuwe vorm van puritanisme tot
+          stand te brengen om de vrouw te onderdrukken. Dit gebeurt door het ontnemen van de rechten van de man,
+          namelijk zijn recht tot verleiding en het opzoeken van de grenzen. Als een spreekwoordelijke “hand op de knie”
+          een reden kan zijn voor een publieke berechting, iets dat wij vele malen hebben moeten aanschouwen, wordt het
+          recht van beide geslachten ontnomen om de gespannen seksuele verhouding tussen man en vrouw te ontdekken. Dit
+          leidt dus tot een ommekeer van de filosofische ideeën geassocieerd met de seksuele revolutie: men is niet vrij
+          in het beoefenen van het liefdesspel, maar wordt aan meer regels en wetgeving onderworpen dan ooit tevoren. De
+          man verliest zijn recht op verleiding, de vrouw verliest haar recht om verleid te worden. Het is daarom niks
+          meer dan een continuatie van wat we al millennia zien: seksualiteit mag niet vrij beoefend worden. De
+          verborgen agenda relateert aan wat eerder ter sprake is gekomen; alles draait om seks, behalve seks. Seks
+          draait om macht… En wie de zeden controleert, controleert dus de macht.</p>
+        <p>Dit betekent niet dat er geen wetgeving en actieve vervolging moet zijn van zij (man óf vrouw) die de grenzen
+          overschrijden. Dit vereist wel een grote mate van terughoudendheid. De staat heeft zich in beginsel niet te
+          bemoeien met relaties en seksualiteit, staatsbemoeienis is enkel een <em>ultimum remedium.</em></p>
+      </div>
+
+      <div id="manifest-geslacht">
+        <h2>Geslacht en seksuele oriëntatie</h2>
+        <p>Een ander aspect dat wij centraal moeten stellen is de verzameling van ideeën omtrent geslacht en seksuele
+          oriëntatie. De meeste culturen zijn omgeven door een sprookjesachtige visie op geslacht en seksuele
+          oriëntatie: er is een man en een vrouw, ze worden verliefd en leven nog lang en gelukkig. De man is sterk en
+          zonder angst, de vrouw is verzorgend en emotioneel beladen. Deze archaïsche interpretatie is in recente
+          decennia steeds meer losgelaten, net als de idee dat liefde enkel tussen een man en een vrouw kan
+          plaatsvinden. Deze ontwikkeling is in beginsel goed, maar komt met haar haken en ogen.</p>
+        <p>Er is sprake van een waarneembare trend naar het verfijnen van geslacht en seksuele oriëntatie, eventueel met
+          behulp van verzonnen concepten. Dit uit zich in het consequent definiëren van nieuwe vormen van seksualiteit
+          en geslacht. Feit blijft echter dat in het laatste geval de biologie een mening heeft: er zijn twee
+          geslachten, een man en een vrouw. Elke andere vorm van geslacht is enkel een product van de menselijke geest
+          en paradoxaal genoeg een continuatie van wat men stelt te bestrijden. Een man die zich niet strikt als “man”
+          gedraagt, sterk en angstloos, heeft een nieuw label nodig, en idem dito voor een vrouw. Deze beweging houdt
+          dus feitelijk het eerder besproken archaïsche man-vrouwmodel in stand, er worden enkel nieuwe labels aan
+          toegevoegd. Ditzelfde geldt voor seksuele oriëntatie. Waren er eens slechts drie opties (heteroseksueel,
+          homoseksueel en biseksueel), nu zijn er vele opties bijgekomen, afhankelijk van de seksualiteit en het
+          bijbehorende gedrag van de desbetreffende groep.</p>
+        <p>De waarheid is dat mensen in het algemeen, en seksuele oriëntatie en geslacht in het bijzonder, geen kwestie
+          is van zwart-wit; er zijn enkel eindeloos veel tinten grijs. Het verzinnen en labelen van andere vormen is dan
+          ook een vruchteloze exercitie. Ware emancipatie betekent dat mannelijkheid en vrouwelijkheid in beginsel niet
+          te definiëren zijn buiten het biologische aspect en dat seksuele oriëntatie als geheel een achterhaald concept
+          is. Het willen labelen van iedere seksuele uitingsvorm, waar er in theorie oneindig veel van zijn, is dus niks
+          anders dan een nieuwe vorm van onderdrukking en hokjesdenken.</p>
+      </div>
+
+      <div id="manifest-technologie">
+        <h2>De opkomst van technologie</h2>
+        <p>Een belangrijke reden voor het schrijven van een document gericht op een langetermijnvisie is de ongekende
+          opmars van industrie en technologie van de afgelopen twee eeuwen. In een relatief korte tijd heeft de mens
+          haar simpelere vormen van bestaan, gekenmerkt door beperkte technologie, luxe en kwaliteit van leven, achter
+          zich gelaten om een tijdperk van relatieve overvloed in te gaan. Dit heeft geleid tot vele positieve
+          ontwikkelingen, zoals het tegengaan van ziektes, verlenging van het leven en verbetering van de kwaliteit van
+          leven.</p>
+        <p>Deze opkomst van technologie heeft echter ook een duistere kant: omdat de mens nog steeds in haar van oudsher
+          kapitalistische wijze van productie zit, betekent het ook dat de ongelijkheid tussen mensen op vele vlakken is
+          uitvergroot, tot het punt dat men kan gaan spreken over “loonslavernij”. Enkele individuen en organisaties
+          hebben toegang tot vele en geavanceerde vormen van productie en technologie, terwijl de meerderheid nog steeds
+          enkel haar kennis en lichaam ter beschikking hebben. De automatisering van het productieproces versterkt dit
+          proces en begint ertoe te leiden dat een substantieel deel van de werkende bevolking irrelevant voor het
+          productieproces lijkt te worden, met alle gevolgen van dien. Dit is vergelijkbaar met de opkomst van de
+          Ludieten-beweging eind 18e en begin 19e eeuw, een beweging die streed tegen de industrialisatie om zo hun
+          eigen marginalisering tegen te gaan. Uiteindelijk zou de industriële vooruitgang tot een bloederige en
+          onrustige periode leiden, beginnend met de revoluties van 1848.</p>
+        <p>Een dergelijk scenario is een reëel toekomstbeeld als men de vooruitgang van technologie en automatisering
+          zonder enige (reële) visie in goede banen leidt of zelfs in haar voordeel laat werken. Wetenschap en
+          technologie dienen een centrale positie in te nemen in iedere samenleving, en dit dient zich via het onderwijs
+          te uiten. De kansen die dit biedt zijn eindeloos en worden niet voldoende benut. Op de middellange termijn
+          dient er gestreefd te worden naar een uitbanning van standaardwerk dat leidt tot een samenleving die enkel
+          gericht is op wetenschappelijke, technologische, filosofische en kunstzinnige vooruitgang, met als
+          uitgangspunt het onafhankelijke maken van de mensheid van de grillen van haar omgeving.</p>
+      </div>
+
+      <div id="manifest-toekomst">
+        <h2>Een waardige toekomst</h2>
+        <p>Niet alleen de technologische ontwikkelingen zijn de reden voor de noodzaak van een langetermijnvisie, maar
+          in een toekomst waarin ook natuurlijke ontwikkelingen onverstoord doorgaan is een langetermijnvisie cruciaal
+          voor de versterking en het behoud van een waardig bestaan voor mens en natuur. Mensen zijn vaak verwikkeld in
+          een zoektocht naar geluk, ondanks dat het voor velen moeilijk is om te definiëren wat geluk voor betekent.
+        </p>
+        <p>Als student, als vrijwilliger of door het leveren van arbeid dragen we ons steentje bij aan de samenleving.
+          Dit zorgt voor economische welvaart, het voorziet ons van inkomen en het levert de staat financiële middelen
+          op. Hierbij rijst de vraag of er een evenredige balans is tussen deze drie factoren. Het leveren van arbeid
+          kan de mens een gelukkig gevoel geven door voldoening, maar het levert ook stress op, wat vervolgens van grote
+          invloed kan zijn op andere factoren in het leven. De zoektocht naar de juiste balans tussen arbeid en rust
+          brengt niet alleen het individu verder, maar ook de gehele samenleving. Zowel lichamelijke als geestelijke
+          rust is nodig voor betere prestaties, het creëren van kansen en het benutten van deze kansen. Geluk wordt mede
+          bepaald door kansen in het leven en is daarnaast sterk gecorreleerd aan gezondheid. Door een goede balans
+          tussen arbeid, rust en geluk vergroten persoonlijke kansen en de kansen voor ons als samenleving.</p>
+        <p>Een ideaal gericht op een basis van verbondenheid, menselijke waardigheid, solidariteit, democratie,
+          gelijkwaardigheid en rechtvaardigheid biedt kansen om meer gevoel van geluk van mensen terug te brengen, wat
+          dit gevoel ook is. Er zullen altijd mogelijkheden zijn om een wezenlijke veranderingen te realiseren die
+          leiden tot een alternatieve toekomst. In een wereld waarin het consumentisme een steeds grotere stempel drukt
+          op ons dagelijkse leven bieden onze kennis, creativiteit en doorzettingsvermogen talloze mogelijkheden om met
+          steeds innovatievere oplossingen te komen. Wat ooit onmogelijk leek, is nu steeds vaker mogelijk.</p>
+      </div>
+
+      <div id="manifest-uitleiding">
+        <h2>Uitleiding</h2>
+        <p>Het doel van dit document was om houvast te bieden voor de oprichting van een politieke beweging die voorbij
+          gaat aan de waan van de dag en mens, politiek, wetenschap en levensbeschouwing in een bredere, universele
+          context probeert te plaatsen, met als uiteindelijke doel een begin te maken voor een nieuw tijdperk van
+          samenleving, welvaart en democratie. De woorden in dit document zijn directe producten van de geesten van de
+          auteurs en dienen derhalve niet als een absolute waarheid te worden beschouwd. Integendeel, dit document is
+          open voor constructieve kritiek, revisie en uitbreiding. Het is een document dat kracht probeert te geven aan
+          de stille meerderheid die het zwijgen wordt opgelegd, de andersdenkenden en de verworpenen. Opdat hen een
+          licht wordt geboden aan het einde van de tunnel.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
