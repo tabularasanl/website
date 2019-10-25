@@ -9,18 +9,30 @@
   <title>Tabula Rasa</title>
   <style>
     body>.container {
-      padding: 60px 15px 0;
+      padding: 0px 15px 0;
     }
 
     body {
       line-height: 2em;
     }
+
+    #slogan {
+      margin-top: 10vh;
+    }
+
+    #hero-image {
+      background-image: url("./images/sea1.jpg");
+      background-position: center;
+      background-size: cover;
+      min-height: 150px;
+      height: 50vh;
+    }
   </style>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: royalblue">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top flex-column flex-md-row bd-navbar" style="background-color: #007bff">
+    <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./images/logo.svg" width="30" height="30" alt="Logo" />
         Tabula Rasa
@@ -58,12 +70,22 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+  <header>
+    <div class="jumbotron d-flex justify-content-center" id="hero-image">
+      <blockquote class="blockquote d-md-none" id="slogan">
+        <p class="display-5"><em>"Te midden van chaos creëert de waarheid hoop."</em></p>
+      </blockquote>
+      <blockquote class="blockquote d-none d-md-block" id="slogan">
+        <p class="display-4"><em>"Te midden van chaos creëert de waarheid hoop."</em></p>
+      </blockquote>
+    </div>
   </header>
 
-
   <main role="main" class="container">
-    <div id="introductie" class="my-5">
+    <div id="introductie" class="my-5 col-12">
       <h1>Introductie</h1>
       <p>De politiek is tegenwoordig een spel waarin persoonlijke belangen en partijbelangen de overhand nemen. De waan
         van de dag zorgt voor kortetermijnbeleid, terwijl er te weinig oplossingen worden gevonden voor echte problemen.
@@ -128,9 +150,6 @@
     <div id="manifest" class="my-5">
       <div id="manifest-samenvatting">
         <h1>Manifest 'Fundamentele waarden'</h1>
-        <blockquote class="blockquote text-center my-3 bg-light">
-          <p class="mb-0"><em>"Te midden van chaos creëert de waarheid hoop."</em></p>
-        </blockquote>
         <p>De woorden in dit stuk vormen samen een geheel van waarden die een alternatief ideaalbeeld voor een
           samenleving schetsen. Verbondenheid, menselijke waardigheid, solidariteit, democratie, gelijkwaardigheid en
           rechtvaardigheid zijn de fundamentele waarden uit dit ideaalbeeld en vormen de rode draad in dit manifest. De
